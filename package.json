@@ -1,0 +1,23 @@
+{
+  "name": "coding-test",
+  "version": "1.0.0",
+  "description": "Congratulations, you have been asked to complete our Full Stack candidate proficiency test!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icappel/coding-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icappel/coding-test/issues"
+  },
+  "homepage": "https://github.com/icappel/coding-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
