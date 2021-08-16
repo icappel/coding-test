@@ -1,5 +1,17 @@
 # Ownr Developer Candidate Coding Test
 
+## Instructions to run completed project
+
+For production: 
+- run `npm run setup && npm run build-run`
+- navigate to [http://localhost:5000](http://localhost:5000)
+
+For development: 
+- run `npm run setup && npm run start`
+- in another terminal tab, run `npm run client`
+
+## Instructions
+
 Congratulations, you have been asked to complete our Full Stack candidate proficiency test! 
 
 You will have **48 hours** starting when you receive this test to return the full working source code as a Pull Request against a fork of this repository. Please thoroughly read the attached set of instructions. You will be creating a mini web app that uses React, Node & Express. This app will consist of a backend Express server that will deliver a React app to be rendered in the browser. The app that you will be building is a simple image carousel that allows the user to pick between cat or

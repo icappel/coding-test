@@ -35,7 +35,7 @@ function CarouselView(props) {
         return () => {
             document.removeEventListener('keyup', handleKeyPress)
         }
-    }, [handleKeyPress])
+    })
 
     return (
         <div className="CarouselView">

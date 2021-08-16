@@ -1,4 +1,3 @@
-import spinner from './loading.gif'
 import './styles.css'
 
 function Loading() {

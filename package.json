@@ -1,17 +1,21 @@
 {
   "name": "coding-test",
   "version": "1.0.0",
-  "description": "Congratulations, you have been asked to complete our Full Stack candidate proficiency test!",
+  "description": "Ian Cappellani's submission for the Ownr work test.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "build": "cd client && npm build",
+    "setup": "npm install && cd client && npm install && cd ..",
+    "build-run": "cd client && npm run build && cd .. && node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/icappel/coding-test.git"
   },
-  "author": "",
+  "author": "Ian Cappellani",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/icappel/coding-test/issues"
