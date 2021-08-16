@@ -1,3 +1,4 @@
+import './styles.css'
 import { useState, useEffect } from "react"
 
 function CarouselView(props) {
@@ -25,6 +26,10 @@ function CarouselView(props) {
     }
 
     useEffect(() => {
+        setImageIndex(0)
+    }, [images])
+
+    useEffect(() => {
         document.addEventListener('keyup', handleKeyPress)
 
         return () => {
@@ -32,16 +37,27 @@ function CarouselView(props) {
         }
     }, [handleKeyPress])
 
-    // TODO: Make sure arrow presses change the image
     return (
-        <div onKeyPress={handleKeyPress}>
-            <button onClick={decrementIndex}>&lt;</button>
+        <div className="CarouselView">
+            <button 
+                className={"arrow-button" + (imageIndex <= 0 ? " hidden" : "")} 
+                onClick={decrementIndex}
+            >
+                    &lt;
+            </button>
             {images.length > 0 ?
-                <img src={images[imageIndex]} alt="A cat or shark" />
+                <div className="image">
+                    <img src={images[imageIndex]} alt="A cat or shark" />
+                </div>
                 :
-                <div>No images found.</div>
+                <div className="image">No images found.</div>
             }
-            <button onClick={incrementIndex}>&gt;</button>
+            <button 
+                className={"arrow-button" + (imageIndex >= images.length - 1 ? " hidden" : "")}  
+                onClick={incrementIndex}
+            >
+                &gt;
+            </button>
         </div>
     )
 }

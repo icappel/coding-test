@@ -5,13 +5,17 @@ function ContentSelector(props) {
 
     const toggleShark = () => {
         // Make sure that at least one option is always selected
-        if (!(selected.sharks && !selected.cats)) {
+        if (selected.sharks && !selected.cats) {
+            setSelected({sharks: false, cats: true})
+        } else {
             setSelected({...selected, sharks: !selected.sharks})
         }
     }
 
     const toggleCat = () => {
-        if (!(selected.cats && !selected.sharks)) {
+        if (selected.cats && !selected.sharks) {
+            setSelected({sharks: true, cats: false})
+        } else {
             setSelected({...selected, cats: !selected.cats})
         }
     }

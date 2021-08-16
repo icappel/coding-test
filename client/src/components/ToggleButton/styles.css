@@ -1,0 +1,27 @@
+.toggle-button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.3em;
+    border: 1px solid hsla(0, 0%, 30%, 1);
+    margin: 1rem;
+    min-width: 5em;
+    cursor: pointer;
+}
+
+.toggle-button.selected {
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(300, 100%, 25%, 1);
+}
+
+.toggle-button.selected:hover {
+    background-color: hsla(300, 100%, 15%, 1);
+}
+
+.toggle-button.unselected {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.toggle-button.unselected:hover {
+    background-color: hsla(0, 0%, 85%, 1);
+}
